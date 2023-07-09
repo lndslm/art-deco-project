@@ -1,9 +1,15 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 body {
   font-family: Lato, helvetica, sans-serif;
+  background: #768bc1;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/images/background.jpg);
   background-size: cover;
   background-position: center;
@@ -11,4 +17,69 @@ header {
   padding: 100px;
   text-align: center;
   color: white;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  background: white;
+  color: black;
+  display: inline-block;
+  margin-top: 32px;
+  text-decoration: none;
+  padding: 13px 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 17px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  header a {
+    font-size: 8px;
+  }
 }
