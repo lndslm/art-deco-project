@@ -1,16 +1,25 @@
+body {
+  font-family: Lato, helvetica, sans-serif;
+  background: #768bc1;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-body {
-  font-family: Lato, helvetica, sans-serif;
-  background: #768bc1;
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/background.jpg);
+    url(/images/background1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,9 +66,46 @@ header a {
 }
 
 footer {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 14px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/images/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+  line-height: 24px;
+}
+
+footer .about {
+  margin-left: 30px;
 }
 
 @media (max-width: 900px) {
