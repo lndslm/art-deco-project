@@ -49,6 +49,7 @@ body {
 .patterns-gallery img {
   border-radius: 4px;
   transition: all 150ms ease-in-out;
+  width: 100%;
 }
 
 .patterns-gallery img:hover {
@@ -238,8 +239,15 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .gallery{
+    grid-template-columns: 1fr 1fr;
+  }
+
   .grid-3-columns-uneven {
     grid-gap: 10px;
+  }
+
+  .grid.patterns-gallery {
   }
 
   section {
@@ -249,5 +257,11 @@ footer a {
   .img-responsive {
     display: block;
     margin: 0 auto;
+  }
+}
+
+/*@media (min-width: 900px) and (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }
