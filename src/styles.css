@@ -30,9 +30,11 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: white;
-  padding: 20px;
-  margin: 20px 10px;
+  padding: 30px;
+  margin: 30px 10px;
 }
 
 section {
@@ -120,6 +122,14 @@ main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
+  margin: 20px 0 5px 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 main p {
@@ -128,6 +138,9 @@ main p {
   line-height: 24px;
   font-style: normal;
   opacity: 0.7;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 20px;
 }
 
 main a {
@@ -137,6 +150,7 @@ main a {
   text-decoration: none;
   padding: 10px 40px;
   border-radius: 5px;
+  margin-top: auto;
 }
 
 footer {
