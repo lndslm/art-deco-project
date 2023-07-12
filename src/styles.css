@@ -62,7 +62,8 @@ section {
   padding: 100px;
 }
 
-section.secondary {
+section.secondary,
+section.quaternary {
   background: #d0dbe0;
   text-align: center;
 }
@@ -239,15 +240,12 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .gallery{
+  .patterns-gallery {
     grid-template-columns: 1fr 1fr;
   }
 
   .grid-3-columns-uneven {
     grid-gap: 10px;
-  }
-
-  .grid.patterns-gallery {
   }
 
   section {
@@ -264,4 +262,4 @@ footer a {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
-}
+}*/
