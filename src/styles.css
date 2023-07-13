@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   background: white;
   padding: 30px;
-  margin: 30px 10px;
+  margin: 30px 10px 0 10px;
 }
 
 .grid-5-columns {
