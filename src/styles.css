@@ -38,7 +38,7 @@ body {
   margin: 30px 10px;
 }
 
-.patterns-gallery {
+.grid-5-columns {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
@@ -46,17 +46,17 @@ body {
   padding: 0 40px;
 }
 
-.patterns-gallery img {
+.grid-5-columns img {
   border-radius: 4px;
   transition: all 150ms ease-in-out;
   width: 100%;
 }
 
-.patterns-gallery img:hover {
+.grid-5-columns img:hover {
   transform: scale(1.5);
 }
 
-.pinterest-gallery {
+.grid-4-columns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -253,12 +253,18 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .patterns-gallery {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .grid-3-columns-uneven {
     grid-gap: 10px;
+  }
+
+  .grid-4-columns {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  .grid-5-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10px;
   }
 
   section {
